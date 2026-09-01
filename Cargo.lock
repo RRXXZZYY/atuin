@@ -403,7 +403,7 @@ dependencies = [
  "reqwest-middleware",
  "rstest",
  "rusty_paserk",
- "rusty_paseto",
+ "rusty_paseto 0.10.1",
  "semver",
  "serde",
  "serde_bytes",
@@ -454,7 +454,7 @@ dependencies = [
  "rstest",
  "rustix",
  "rusty_paserk",
- "rusty_paseto",
+ "rusty_paseto 0.10.1",
  "semver",
  "serde",
  "serde_json",
@@ -4697,7 +4697,7 @@ dependencies = [
  "ed25519-dalek",
  "generic-array",
  "rand 0.8.7",
- "rusty_paseto",
+ "rusty_paseto 0.8.0",
  "serde",
  "sha2 0.10.9",
  "subtle",
@@ -4714,6 +4714,24 @@ dependencies = [
  "chacha20 0.9.1",
  "digest 0.10.7",
  "ed25519-dalek",
+ "hex",
+ "iso8601",
+ "rand_core 0.9.5",
+ "ring",
+ "subtle",
+ "thiserror 2.0.19",
+ "time",
+ "zeroize",
+]
+
+[[package]]
+name = "rusty_paseto"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b899b089a55222bea8ae753faff5554e7c616548c432adfefc444f06507fa26"
+dependencies = [
+ "base64",
+ "digest 0.10.7",
  "hex",
  "iso8601",
  "rand_core 0.9.5",
@@ -5531,7 +5549,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd"
 dependencies = [
  "fastrand",
- "getrandom 0.3.4",
+ "getrandom 0.4.3",
  "once_cell",
  "rustix",
  "windows-sys 0.61.2",
